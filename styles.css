@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(150, 29, 29);
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5rem;
+}
+
+.header {
+    text-align: center;
+    padding: 1rem;
+}
+
+.header h1 {
+    font-size: 3rem;
+}
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.scoreboard span {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.scoreboard p {
+    background-color: rgb(150, 29, 29);
+    font-size: 1rem;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    color: white;
+}
+
+.infogame {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.infogame h2 {
+    padding: 1rem;
+}
+
+.boardgame {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+}
+
+.boardgame .btn {
+    background-color: brown;
+    cursor: pointer;
+    color: white;
+    margin: 1rem 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.boardgame .btn:hover,
+.boardgame .btn:active,
+button:hover,
+button:active {
+    background-color: rgba(165, 42, 42, 0.5);
+}
+
+button {
+    background-color: rgb(150, 29, 29);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    padding: 0 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    border: none;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        margin: 1rem 1rem;
+    }
+
+    .scoreboard {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .infogame h2 {
+        padding: 0.5rem;
+    }
+    
+    .boardgame{
+        margin: 1rem 0;
+    }
+}
