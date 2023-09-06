@@ -7,13 +7,18 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(150, 29, 29);
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
-    background-color: white;
+    background-color: antiquewhite;
     border-radius: 10px;
-    overflow: hidden;
-    margin: 5rem;
+    width: 400px;
+    
 }
 
 .header {
@@ -21,54 +26,67 @@ body {
     padding: 1rem;
 }
 
-.header h1 {
-    font-size: 3rem;
-}
 .scoreboard {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    width: 100%;
+    margin-top: 30px;
 }
 
+.scoreboard div {
+    display: flex;
+    align-items: center;
+}
 .scoreboard span {
     font-size: 2rem;
-    padding: 1rem;
+    border: 3px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .scoreboard p {
     background-color: rgb(150, 29, 29);
     font-size: 1rem;
-    padding: 0 1rem;
-    margin: 0 1rem;
-    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: antiquewhite;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
 .infogame {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    border:  2px solid black;
+    margin: 10px;
+    border-radius: 5px;
 }
 
 .infogame h2 {
     padding: 1rem;
 }
 
+.infogame span {
+    margin-left: 20px;
+}
+
 .boardgame {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     margin: 3rem 0;
 }
 
 .boardgame .btn {
     background-color: brown;
     cursor: pointer;
-    color: white;
+    color: antiquewhite;
+    font-weight: bold;
     margin: 1rem 1rem;
     padding: 1rem;
     border-radius: 5px;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    border: none;
 }
 
 .boardgame .btn:hover,
@@ -78,35 +96,14 @@ button:active {
     background-color: rgba(165, 42, 42, 0.5);
 }
 
-button {
-    background-color: rgb(150, 29, 29);
+#reset {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    padding: 0 1rem;
     border-radius: 5px;
     cursor: pointer;
     display: block;
     margin: 0 auto;
     margin-bottom: 3rem;
-    border: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
 }
 
-@media screen and (max-width: 700px) {
-    .container {
-        margin: 1rem 1rem;
-    }
-
-    .scoreboard {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .infogame h2 {
-        padding: 0.5rem;
-    }
-    
-    .boardgame{
-        margin: 1rem 0;
-    }
-}
